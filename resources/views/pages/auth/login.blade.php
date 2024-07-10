@@ -18,7 +18,7 @@ $authenticate = function(){
 
         return;
     }
-    
+
     event(new Login(auth()->guard('web'), User::where('email', $this->email)->first(), $this->remember));
 
     return redirect()->intended('/');
@@ -36,17 +36,13 @@ $authenticate = function(){
             </x-ui.link>
 
             <h2 class="mt-5 text-2xl font-extrabold leading-9 text-center text-gray-800 dark:text-gray-200">Sign in to your account</h2>
-            <div class="text-sm leading-5 text-center text-gray-600 dark:text-gray-400 space-x-0.5">
-                <span>Or</span>
-                <x-ui.text-link href="{{ route('register') }}">create a new account</x-ui.text-link>
-            </div>
         </div>
 
         <div class="mt-8 sm:mx-auto sm:w-full sm:max-w-md">
             <div class="px-10 py-0 sm:py-8 sm:shadow-sm sm:bg-white dark:sm:bg-gray-950/50 dark:border-gray-200/10 sm:border sm:rounded-lg border-gray-200/60">
                 @volt('auth.login')
                     <form wire:submit="authenticate" class="space-y-6">
-                        
+
                         <x-ui.input label="Email address" type="email" id="email" name="email" wire:model="email" />
                         <x-ui.input label="Password" type="password" id="password" name="password" wire:model="password" />
 
@@ -60,7 +56,7 @@ $authenticate = function(){
                 @endvolt
             </div>
         </div>
-        
+
     </div>
 
 </x-layouts.main>
