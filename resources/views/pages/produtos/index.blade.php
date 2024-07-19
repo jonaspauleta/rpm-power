@@ -42,8 +42,8 @@ with(function () {
 
     @volt('produtos.index')
     <div class="relative flex flex-col w-full px-6 py-10 mx-auto lg:max-w-6xl sm:max-w-xl md:max-w-full sm:pb-16">
-        <h1 class="text-2xl font-bold tracking-tighter leading-tighter dark:text-white font-heading md:text-3xl">Our Products</h1>
-        <p class="w-full mt-2 text-base font-medium text-neutral-400 dark:text-slate-400 md:mt-2">Discover our range of products. We offer the best quality and latest trends to meet your needs.</p>
+        <h1 class="text-2xl font-bold tracking-tighter leading-tighter dark:text-white font-heading md:text-3xl">Os nossos produtos</h1>
+        <p class="w-full mt-2 text-base font-medium text-neutral-400 dark:text-slate-400 md:mt-2">Conheça a nossa gama de produtos.</p>
 
         <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-2 gap-10 mt-10">
             @foreach ($products as $product)
@@ -64,7 +64,7 @@ with(function () {
                             <a class="transition duration-200 ease-in dark:hover:text-blue-700 hover:text-primary" href="{{ $this->route_prefix }}/{{ $product->slug }}">{{ $product->title }}</a>
                         </h2>
                         <p class="text-lg font-light text-muted dark:text-slate-400">{{ substr(strip_tags($product->description), 0, 100) }}@if(strlen(strip_tags($product->description)) > 100){{ '...' }}@endif</p>
-                        <p class="mt-2 text-xl font-semibold text-gray-800 dark:text-gray-100">{{ $product->price }}</p>
+                        <p class="mt-2 text-xl font-semibold text-gray-800 dark:text-gray-100">{{ $product->price }}€</p>
                     </div>
                 </div>
             @endforeach
