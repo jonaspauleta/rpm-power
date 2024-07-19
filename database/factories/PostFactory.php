@@ -13,24 +13,22 @@ use Illuminate\Database\Eloquent\Factories\Factory;
 final class PostFactory extends Factory
 {
     /**
-    * The name of the factory's corresponding model.
-    *
-    * @var string
-    */
+     * The name of the factory's corresponding model.
+     *
+     * @var string
+     */
     protected $model = Post::class;
 
     /**
-    * Define the model's default state.
-    *
-    * @return array
-    */
+     * Define the model's default state.
+     */
     public function definition(): array
     {
         return [
             'user_id' => \App\Models\User::factory(),
             'title' => fake()->sentence(),
             'body' => fake()->paragraphs(10, true),
-            'image' => 'https://picsum.photos/1280/720?random=' . fake()->unique()->slug(),
+            'image' => 'https://picsum.photos/1280/720?random='.fake()->unique()->slug(),
             'slug' => fake()->unique()->slug(),
             'excerpt' => fake()->optional()->word,
             'type' => fake()->word,
