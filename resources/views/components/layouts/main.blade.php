@@ -6,7 +6,6 @@
 
         <link rel="icon" href="favicon.svg" sizes="any" type="image/svg+xml">
 
-        <!-- Used to add dark mode right away, adding here prevents any flicker -->
         <script>
             if (typeof(Storage) !== "undefined") {
                 if(localStorage.getItem('dark_mode') && localStorage.getItem('dark_mode') == 'true'){
@@ -14,7 +13,6 @@
                 }
             }
         </script>
-
 
         @vite(['resources/css/app.css', 'resources/js/app.js'])
 

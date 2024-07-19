@@ -25,7 +25,7 @@
 
             <div class="flex items-center justify-center mt-4">
                 <p class="text-2xl font-semibold text-gray-800 dark:text-gray-100">
-                    Price: {{ $product->price }}
+                    {{ $product->price }}€
                 </p>
             </div>
 
