@@ -20,11 +20,13 @@
             </div>
 
             @if ($product->image)
-                <img src="@if(str_starts_with($product->image, 'https') || str_starts_with($product->image, 'http')){{ $product->image }}@else{{ asset('storage/' . $product->image) }}@endif" alt="{{ $product->title }}" class="w-2/3 mx-auto mt-4">
+                <img src="@if(str_starts_with($product->image, 'https') || str_starts_with($product->image, 'http')){{ $product->image }}@else{{ asset('storage/' . $product->image) }}@endif" alt="{{ $product->title }}" class="w-full mx-auto mt-4">
             @endif
 
             <div class="flex items-center justify-center mt-4">
-                <p class="text-2xl font-semibold text-gray-800 dark:text-gray-100">Price: {{ $product->price }}</p>
+                <p class="text-2xl font-semibold text-gray-800 dark:text-gray-100">
+                    Price: {{ $product->price }}
+                </p>
             </div>
 
             <div class="flex items-center justify-center mt-4 text-left">

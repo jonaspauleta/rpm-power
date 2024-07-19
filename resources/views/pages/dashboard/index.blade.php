@@ -22,16 +22,33 @@ middleware(['auth', 'verified']);
                         <div class="flex relative flex-col p-10">
                             <div class="flex items-center pb-5 mb-5 space-x-1.5 text-lg font-bold text-gray-800 uppercase border-b border-dotted border-zinc-200 dark:border-gray-800 dark:text-gray-200">
                                 <x-ui.logo class="block w-auto h-7 text-gray-800 fill-current dark:text-gray-200" />
+
                                 <span>Genesis</span>
                             </div>
-                            <p class="mb-5 text-sm text-zinc-500 dark:text-gray-400">This is the default dashboard which you can use and customize. Alternatively we also have three dashboard starter templates available.</p>
-                            <p class="text-sm text-zinc-500 dark:text-gray-400">You can get all three designs, each with dark mode for only $29. Learn more below.</p>
+
+                            <p class="mb-5 text-sm text-zinc-500 dark:text-gray-400">
+                                This is the default dashboard which you can use and customize. Alternatively we also have three dashboard starter templates available.
+                            </p>
+
+                            <p class="text-sm text-zinc-500 dark:text-gray-400">
+                                You can get all three designs, each with dark mode for only $29. Learn more below.
+                            </p>
+
                             <div class="flex items-center my-6 space-x-3">
-                                <x-ui.button href="https://tonylea.lemonsqueezy.com/checkout/buy/7b997498-2512-4d24-8aa6-6027c5a22922?logo=0" tag="a" target="_blank" type="primary"><x-phosphor-storefront-duotone class="mr-1 w-4 h-4" /> Get It Here</x-ui.button>
-                                <x-ui.button href="https://www.youtube.com/watch?v=bkdXxmeh0Aw" tag="a" target="_blank" type="secondary"><x-phosphor-popcorn-duotone class="mr-1 w-4 h-4" />Video Preview</x-ui.button>
+                                <x-ui.button href="https://tonylea.lemonsqueezy.com/checkout/buy/7b997498-2512-4d24-8aa6-6027c5a22922?logo=0" tag="a" target="_blank" type="primary">
+                                    <x-phosphor-storefront-duotone class="mr-1 w-4 h-4" /> Get It Here
+                                </x-ui.button>
+
+                                <x-ui.button href="https://www.youtube.com/watch?v=bkdXxmeh0Aw" tag="a" target="_blank" type="secondary">
+                                    <x-phosphor-popcorn-duotone class="mr-1 w-4 h-4" />Video Preview
+                                </x-ui.button>
                             </div>
-                            <p class="text-sm text-zinc-600 dark:text-gray-300">Thanks for using Genesis ✌️</p>
+
+                            <p class="text-sm text-zinc-600 dark:text-gray-300">
+                                Thanks for using Genesis ✌️
+                            </p>
                         </div>
+
                         <img src="https://cdn.devdojo.com/images/february2024/dashboards.png" alt="Dashboard" class="object-cover w-2/3 h-full rounded-lg" />
                     </div>
                 </div>
