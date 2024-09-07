@@ -17,51 +17,10 @@ name('sobre');
                 </h1>
 
                 <p class="mt-4 text-base sm:text-lg leading-6 text-slate-600 dark:text-slate-400">
-                    Estamos comprometidos em fornecer soluções inovadoras com foco na qualidade e na satisfação do cliente. A nossa equipa dedicada trabalha incansavelmente para oferecer um valor excecional e promover o sucesso.
+                    A RPM Power Management tem origem na Alvan Motors em 1981 no departamento de engenharia envolvendo o desenvolvimento de preparações mecânicas e electrónicas belgas. Criada por Alain Vandriessche, os motores Alvan sempre foram focados na competição. Graças á dedicação, conhecimento e gosto ao mundo automóvel, desenvolvemos reprogramações individuais por forma a proporcionar mais potência, binário e satisfação do cliente sem nunca comprometer a fiabilidade do conjunto. Depois de 40 anos de experiência automóvel, A RPM Power Engine Management é a tua solução para a reprogramação do teu carro, mota,etc.
                 </p>
             </div>
         </div>
-
-        <div class="w-full max-w-3xl mx-auto mt-8 space-y-6">
-            <div>
-                <h2 class="text-lg font-semibold text-slate-900 dark:text-slate-100 sm:text-xl">
-                    A Nossa Missão
-                </h2>
-
-                <p class="mt-2 text-sm sm:text-base text-slate-600 dark:text-slate-400">
-                    A nossa missão é utilizar a tecnologia para resolver problemas complexos e entregar resultados excecionais. Lutamos pela excelência em cada projeto e aspiramos a superar as expectativas dos nossos clientes.
-                </p>
-            </div>
-
-            <div>
-                <h2 class="text-lg font-semibold text-slate-900 dark:text-slate-100 sm:text-xl">
-                    A Nossa História
-                </h2>
-
-                <p class="mt-2 text-sm sm:text-base text-slate-600 dark:text-slate-400">
-                    Desde a nossa fundação em [Ano], evoluímos de uma pequena startup para um líder no nosso setor. O nosso crescimento é um testemunho da nossa inovação e dedicação aos nossos clientes e à indústria.
-                </p>
-            </div>
-
-            <div>
-                <h2 class="text-lg font-semibold text-slate-900 dark:text-slate-100 sm:text-xl">
-                    A Nossa Equipa
-                </h2>
-
-                <p class="mt-2 text-sm sm:text-base text-slate-600 dark:text-slate-400">
-                    Somos uma equipa de profissionais qualificados com uma vasta gama de especialidades. A nossa abordagem colaborativa permite-nos enfrentar desafios de forma eficaz e oferecer soluções que fazem a diferença.
-                </p>
-            </div>
-
-            <div>
-                <h2 class="text-lg font-semibold text-slate-900 dark:text-slate-100 sm:text-xl">
-                    Contacte-nos
-                </h2>
-
-                <p class="mt-2 text-sm sm:text-base text-slate-600 dark:text-slate-400">
-                    Se tiver alguma questão ou gostaria de saber mais sobre os nossos serviços, por favor entre em contacto connosco. Estamos aqui para ajudar e fornecer as informações de que precisa.
-                </p>
-            </div>
         </div>
     </div>
 </x-layouts.marketing>

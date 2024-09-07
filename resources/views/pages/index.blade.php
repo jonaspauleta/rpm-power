@@ -9,7 +9,7 @@ name('home');
 
 <x-layouts.marketing>
     @volt('home')
-        <div class="relative flex flex-col items-center justify-center w-full min-h-screen overflow-hidden bg-cover bg-center" x-cloak style="background-image: url('storage/background.jpg');">
+        <div class="relative flex flex-col items-center justify-center w-full min-h-screen overflow-hidden bg-cover bg-center" x-cloak style="background-image: url('storage/background2.jpg');">
             <div class="absolute inset-0 bg-black opacity-50"></div>
 
             <div class="relative flex items-center w-full max-w-6xl px-8 pt-12 pb-20 mx-auto">

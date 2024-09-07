@@ -2,6 +2,7 @@
 
 use App\Http\Controllers\Auth\EmailVerificationController;
 use App\Http\Controllers\Auth\LogoutController;
+use App\Models\Product;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -24,3 +25,8 @@ Route::middleware('auth')->group(function () {
     Route::post('logout', LogoutController::class)
         ->name('logout');
 });
+
+Route::delete('/auth/products/{product}', function (Product $product) {
+    $product->delete();
+    return redirect()->route('dashboard')->with('success', 'Product deleted successfully.');
+})->middleware(['auth', 'verified'])->name('auth.products.destroy');

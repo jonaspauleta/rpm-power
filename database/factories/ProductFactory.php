@@ -29,7 +29,7 @@ final class ProductFactory extends Factory
             'description' => fake()->paragraphs(10, true),
             'image' => 'https://picsum.photos/1280/720?random='.fake()->unique()->slug(),
             'slug' => fake()->unique()->slug(),
-            'price' => fake()->randomFloat(2, 100, 5000),
+            'price' => fake()->randomFloat(2, 100, 5000).'€',
         ];
     }
 }

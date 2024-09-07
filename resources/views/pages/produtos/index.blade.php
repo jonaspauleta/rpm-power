@@ -76,7 +76,7 @@ with(function () {
                             </p>
 
                             <p class="mt-2 text-xl font-semibold text-gray-800 dark:text-gray-100">
-                                {{ $product->price }}€
+                                {{ $product->price }}
                             </p>
                         </div>
                     </div>
